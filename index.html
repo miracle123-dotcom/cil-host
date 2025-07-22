@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Special Birthday</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg1">
+  
+</body>
+<!-- Preload background images -->
+<div style="display: none;">
+  <img src="bg1.jpg" alt="bg1">
+  <img src="bg2.jpg" alt="bg2">
+  <img src="bg3.jpg" alt="bg3">
+</div>
+
+<div class="container" id="startContainer">
+  
+  <img src="cil.jpg" alt="Foto Celine" class="foto-cinta">
+  <h1>Hai Cil! 💖</h1>
+  <p class="question">Coba tebak.. siapa yang paling cantik dan ulang tahun hari ini? 😏</p>
+  <input type="text" id="answer" placeholder="Tulis jawabannya di sini">
+  <button onclick="checkAnswer()">Jawab</button>
+  <p id="hint" style="color: gray;"></p>
+</div>
+
+<div class="container hidden" id="surpriseContainer">
+  <h1 class="surprise">Happy Birthday, sayang!</h1>
+  <p>Saiko punya sesuatu for celine...</p>
+  <button onclick="showGift()">Klik ini seng🎁</button>
+</div>
+
+<div class="container hidden" id="giftContainer">
+  <h1> Dari Saiko Pacar Terganteng hehe </h1>
+  <p>Selamat ulang tahun yah cantik.. Panjang umur sehat selalu diberkati trus oleh Tuhan, apa yang dicita-citakan boleh tercapai, and tambah cantik tambah sayang saiko eheyyy💗</p>
+  <p>I Love You Moree</p>
+  <p>💖</p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

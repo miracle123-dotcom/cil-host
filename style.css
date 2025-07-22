@@ -1,0 +1,119 @@
+body {
+  margin: 0;
+  font-family: 'Comic Sans MS', cursive;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transition: background-image 1s ease;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+  max-width: 500px;
+  background: rgba(255, 255, 255, 0.5); /* putih transparan */
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(5px); /* efek kaca */
+}
+
+
+h1 {
+  color: #e91e63;
+}
+
+.question {
+  font-size: 1.2rem;
+  margin-top: 20px;
+}
+
+input {
+  padding: 10px;
+  border: 2px solid pink;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: hotpink;
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: deeppink;
+}
+
+.hidden {
+  display: none;
+}
+
+.surprise {
+  font-size: 2rem;
+  color: #e91e63;
+  animation: pop 0.5s ease-in-out infinite alternate;
+}
+
+@keyframes pop {
+  from { transform: scale(1); }
+  to { transform: scale(1.05); }
+}
+
+.foto-cinta {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* Background untuk tiap halaman */
+.bg1 {
+  background-image: url('bg1.jpg');
+}
+
+.bg2 {
+  background-image: url('bg2.jpg');
+}
+
+.bg3 {
+  background-image: url('bg3.jpg');
+}
+
+@keyframes zoomBackground {
+  0% { background-size: 100%; }
+  50% { background-size: 105%; }
+  100% { background-size: 100%; }
+}
+
+.bg2, .bg3 {
+  animation: zoomBackground 10s ease-in-out infinite;
+}
+
+/* Animasi masuk untuk gambar */
+@keyframes fotoMasuk {
+  from {
+    opacity: 0;
+    transform: scale(0.8) rotate(-5deg);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) rotate(0deg);
+  }
+}
+
+.foto-cinta.animate {
+  animation: fotoMasuk 1.5s ease-out forwards;
+}
+
